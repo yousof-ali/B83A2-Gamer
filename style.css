@@ -224,6 +224,9 @@ nav ul a{
 .play-inner-image img{
     width: 100%;
 }
+.play-inner-image{
+    width: 60%;
+}
 
 /* play game section  */
 .play-games{
@@ -252,16 +255,61 @@ nav ul a{
 .play-games-inner img{
     width: 100%;
 }
+.play-games-inner{
+    width: 60%;
+}
 
 /* career section start  */
+.careers-section{
+    margin-top: 200px;
+    background-color: #FB3DA4;
+}
 .careers-section-parent{
     display: flex;
     align-items: center;
+    padding-left: 300px;
+    color: white;
 }
-.careers-section{
-    margin: 100px 200px;
-    padding: 0px 100px;
-    background-color: #FB3DA4;
+
+.career-image img{
+    width: 100%;
+}
+.careers-text h2{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+
+}
+.careers-text p{
+    line-height: 1.5rem;
+}
+.careers-items{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.items-first-child{
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+}
+.items-second-child{
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+    text-align: right;
+}
+.see-all-btn{
+    text-decoration: none;
+    color: #FB3DA4;
+    background-color: white;
+    display: inline-block;
+    padding:  20px;
+    margin-top: 20px;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.careers-text{
+    width: 80%;
 }
 
 @media only screen and (max-width:676px){
@@ -368,7 +416,19 @@ nav ul a{
         top: 50%;
         right: -20%;
     }
-    
+    .careers-section{
+        margin-top: 80px;
+        padding: 90px 20px;
+    }
+    .careers-section-parent{
+        flex-direction: column;
+        padding-left: 0px;
+        gap: 50px;
+    }
+
+    .careers-text{
+        width: 80%;
+    }
 }
 @media only screen and (min-width:677px) and (max-width:868px){
     nav{
@@ -459,6 +519,18 @@ nav ul a{
         top: 60%;
         right: -15%;
     }
+    .careers-section{
+        margin-top: 80px;
+        padding: 90px 20px;
+    }
+    .careers-section-parent{
+        flex-direction: column;
+        padding-left: 0px;
+        gap: 50px;
+    }
+    .careers-text{
+        width: 80%;
+    }
 
 }
 
@@ -523,6 +595,21 @@ nav ul a{
     }
     .play-games-paren{
         gap: 150px;
+    }
+    .careers-section{
+        margin-top: 70px;
+    }
+    .careers-section-parent{
+        display: flex;
+        align-items: center;
+        padding-left: 0px;
+        color: white;
+    }
+    .careers-text{
+        width: 80%;
+        padding-left: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
 }
