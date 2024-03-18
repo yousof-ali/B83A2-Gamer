@@ -287,14 +287,13 @@ nav ul a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 1.1rem;
 }
 .items-first-child{
     line-height: 1.6rem;
-    font-size: 1.1rem;
 }
 .items-second-child{
     line-height: 1.6rem;
-    font-size: 1.1rem;
     text-align: right;
 }
 .see-all-btn{
@@ -492,7 +491,8 @@ footer{
     }
     .careers-section{
         margin-top: 100px;
-        padding: 90px 20px;
+        padding: 90px 0px;
+        width: 100%;
     }
     .careers-section-parent{
         flex-direction: column;
@@ -500,7 +500,10 @@ footer{
         gap: 50px;
     }
     .careers-text{
-        width: 80%;
+        width: 95%;
+    }
+    .careers-items{
+        font-size: 0.85rem;
     }
     .game-logo-container{
         display: grid;
