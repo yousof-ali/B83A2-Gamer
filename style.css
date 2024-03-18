@@ -311,6 +311,86 @@ nav ul a{
 .careers-text{
     width: 80%;
 }
+/* logo section  */
+.game-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    margin: auto;
+    flex-flow: wrap;
+    padding: 60px 0px;
+    gap: 10px;
+}
+
+.single-logo-item{
+    display: flex;
+    align-items: center;
+    margin: 12px;
+    padding: 5px;
+    gap: 10px;
+    border-radius: 35px;
+    transition: 0,5s;
+}
+.single-logo-item:hover{
+    border: 2px solid #FB3DA4;
+    color: #FB3DA4;
+
+}
+/* footer start  */
+footer{
+    padding: 50px 0px;
+    background-color: #0B0222;
+}
+.footer-parent{
+    max-width: 70%;
+   margin: auto;
+   text-align: center;
+}
+.footer-logo{
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+}
+.footer-logo h3{
+    font-size: 2rem;
+    color: white;
+}
+.footer-logo span{
+    color: #FB3DA4;
+}
+.footer-a{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 30px 0px;  
+}
+.footer-a a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.801);
+    margin: 0px 15px;
+}
+.footer-i{
+    margin-bottom: 30px;
+}
+.footer-i i{
+    font-size: 1.5rem;
+    color: white;
+    margin: 0px 15px;
+}
+.footer-p{
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.306);
+}
+.footer-p p{
+    margin: 0px 20px;
+}
+.copytag{
+    margin: 15px 0px;
+    color: rgba(255, 255, 255, 0.306);
+}
 
 @media only screen and (max-width:676px){
     nav{
@@ -389,9 +469,6 @@ nav ul a{
         top: 60%;
         left: -20%;
     }
-    .play-inner-image{
-        width: 60%;
-    }
     .play-instantly-text{
         text-align: center;
     }
@@ -406,18 +483,15 @@ nav ul a{
     .play-games-images{
         margin-right: 85px;
     }
-    .play-games-inner{
-        width: 60%;
-    }
     .play-games-text{
         text-align: center;
     }
     .play-games-inner{
-        top: 50%;
+        top: 40%;
         right: -20%;
     }
     .careers-section{
-        margin-top: 80px;
+        margin-top: 100px;
         padding: 90px 20px;
     }
     .careers-section-parent{
@@ -425,9 +499,50 @@ nav ul a{
         padding-left: 0px;
         gap: 50px;
     }
-
     .careers-text{
         width: 80%;
+    }
+    .game-logo-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        max-width: 95%;
+        margin: auto;
+        padding: 60px 0px;
+    }
+    .single-logo-item{
+        display: flex;
+        align-items: center;
+        margin: 5px 0px;
+        padding: 0px;
+        gap: 10px;
+        border-radius: 35px;
+        transition: 0,5s;
+        font-size: 10px;
+        width: 80%;
+    }
+    .single-logo-item img{
+        width: 20%;
+        
+    }
+    .footer-parent{
+       max-width: 100%;
+       margin: auto;
+       text-align: center;
+    }
+    .footer-a a{
+        margin: 0px 5px;
+        font-size: 11px;
+    }
+    .footer-i i{
+        font-size: 1.3rem;
+        color: white;
+        margin: 0px 15px;
+    }
+    .footer-p p{
+        margin: 0px 5px;
+        font-size: 11px;
     }
 }
 @media only screen and (min-width:677px) and (max-width:868px){
@@ -488,11 +603,8 @@ nav ul a{
 
     .play-inner-image{
         position: absolute;
-        top: 60%;
+        top: 50%;
         left: -20%;
-    }
-    .play-inner-image{
-        width: 60%;
     }
     .play-instantly-text{
         text-align: center;
@@ -500,7 +612,7 @@ nav ul a{
     .play-games{
         margin-left: 30px;
         margin-right: 30px;
-        margin-top: 200px;
+        margin-top: 90px;
     }
     .play-games-paren{
         flex-direction: column-reverse;
@@ -509,14 +621,11 @@ nav ul a{
     .play-games-images{
         margin-right: 85px;
     }
-    .play-games-inner{
-        width: 50%;
-    }
     .play-games-text{
         text-align: center;
     }
     .play-games-inner{
-        top: 60%;
+        top: 40%;
         right: -15%;
     }
     .careers-section{
@@ -531,7 +640,9 @@ nav ul a{
     .careers-text{
         width: 80%;
     }
-
+    .game-logo-container{
+        max-width: 95%;
+    }
 }
 
 @media only screen and (min-width:867px) and (max-width:1300px){
@@ -579,9 +690,6 @@ nav ul a{
         margin: 0px 40px;
         padding: 70px 0px;
     }
-    .play-inner-image{
-        width: 60%;
-    }
     .play-instantly-parent{
         gap: 150px;
     }
@@ -589,9 +697,6 @@ nav ul a{
         margin-left: 40px;
         margin-right: 40px;
         margin-top: 170px;
-    }
-    .play-games-inner{
-        width: 60%;
     }
     .play-games-paren{
         gap: 150px;
@@ -610,6 +715,10 @@ nav ul a{
         padding-left: 40px;
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+
+    .game-logo-container{
+        max-width: 90%;
     }
 
 }
